@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset= "UTF-8">
+			<script>
+				function criptografa(){
+					var texto= document.getElementById("texto").value;
+					texto=texto.toLowerCase()
+					var array= texto.split('');
+					verificaCondicoes(array);
+					var texto= array.join('')
+					document.getElementById("result").innerHTML= texto;
+				}
+
+				function verificaCondicoes(array){
+					for(i=0;i<array.length;i++){
+						if(array[i]=='t')
+							array[i]='p';
+
+							else if(array[i]=='p')
+								array[i]='t';
+							
+						
+						if(array[i]=='e')
+							array[i]='o';
+							
+							else if(array[i]=='o')
+								array[i]='e';
+							
+						
+						if(array[i]=='n')
+							array[i]='l';
+							
+							else if(array[i]=='l')
+								array[i]='n';
+							
+
+						if(array[i]=='i')
+							array[i]='a';
+							
+							else if(array[i]=='a')
+								array[i]='i';
+							
+						
+						if(array[i]=='s')
+							array[i]='r';
+							
+							else if(array[i]=='r')
+								array[i]='s';
+												
+					}		
+				}
+			</script>
+</head>
+<body>
+	<input type="text" id="texto"/>
+	<button onclick="criptografa()">Criptografar</button>
+	<h1 id="result"></h1>
+</body>
+</html>
