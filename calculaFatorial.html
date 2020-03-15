@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset= "UTF-8">
+			<script>
+				function calculaFatorial()
+				{
+					var num1= document.getElementById("numero").value;
+					var res=1;
+					for(i=num1;i>1;i--)
+					{
+						res = res * i;
+					}
+				   	document.getElementById("result").innerHTML= num1+"= " +res;
+			 	}
+			</script>
+	</head>
+	<body>
+		<h1 id="result"></h1>
+		<input type="number" id="numero"/>
+		<button onclick="calculaFatorial()">Calcular</button>
+	</body>
+</html>
