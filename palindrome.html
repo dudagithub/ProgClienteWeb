@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset= "UTF-8">
+			<script>
+				function inverter()
+				{
+					var frase= document.getElementById("texto").value;
+					var res=frase.split('').reverse().join('');
+				   		if(res==frase)
+				   				document.getElementById("result").innerHTML= frase+" é um palindrome";
+				   		else
+				   				document.getElementById("result").innerHTML= frase+" não é um palindrome";
+			 	}
+			</script>
+	</head>
+	<body>
+		<h1 id="result"></h1>
+		<input type="text" id="texto"/>
+		<button onclick="inverter()">Inverter</button>
+	</body>
+</html>
