@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset= "UTF-8">
+			<script>
+				function inverter()
+				{
+					var frase= document.getElementById("texto").value;
+					 res=frase.split('').reverse().join('');
+				   	document.getElementById("result").innerHTML= frase+"= " +res;
+			 	}
+			</script>
+	</head>
+	<body>
+		<h1 id="result"></h1>
+		<input type="text" id="texto"/>
+		<button onclick="inverter()">Inverter</button>
+	</body>
+</html>
